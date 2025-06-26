@@ -636,4 +636,47 @@ footer {
     .social-links {
         justify-content: center;
     }
+     .certifications-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-timeline::before {
+        left: 30px;
+    }
+
+    .achievement-item {
+        flex-direction: row !important;
+        margin-left: 60px;
+    }
+
+    .achievement-item:nth-child(even) {
+        flex-direction: row !important;
+    }
+
+    .achievement-year {
+        position: absolute;
+        left: -90px;
+        flex: 0 0 60px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    .achievement-content {
+        margin: 0;
+    }
+
+    .achievement-content::before {
+        left: -20px !important;
+        border-right-color: var(--card-bg) !important;
+        border-left-color: transparent !important;
+    }
+
+    .achievement-stats {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .stat-item {
+        justify-content: center;
+    }
 }
